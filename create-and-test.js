@@ -6,10 +6,18 @@
  * It can be constructed with the RegExp constructor or written as a literal value by enclosing a pattern in /'s.
  */
 
+// CREATING
+
 // with constructor a pattern is written as a normal string
 let re1 = new RegExp('abc');
 
 // need to put backslash before any forward slash we want to be a part of pattern
 let re2 = /abc/; 
 let eighteenPlus = /eighteen\+/; // 'eighteen+'
+
+// TESTING
+// test whether a string contains a match of the pattern in the expression
+
+console.log(/abc/.test('abcde')); //true
+console.log(/abc/.test('abdce')); //false
 
