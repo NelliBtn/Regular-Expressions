@@ -18,3 +18,6 @@ console.log(/[0-9]/.test('in 1992')); //true
  \S - NONwhitespace
  . - any char except for a newline
  */
+
+console.log(/\d/.test('in 1992')); //true
+console.log(/\w/.test('in 1992')); //true
