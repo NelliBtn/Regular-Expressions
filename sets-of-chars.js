@@ -25,5 +25,5 @@ console.log(/\w/.test('in 1992')); //true
 // to INVERT a set of chars (match ANY char EXCEPT the ones in the set) use [^]
 
 let nonBinary = /[^01]/; // match anything but 01
-console.log(nonBinary.test('01000100111001001001')); //false
+console.log(nonBinary.test('01000100111001001001')); //false => only 0's and 1's
 console.log(nonBinary.test('01001110101020111102')); //true => match 2
